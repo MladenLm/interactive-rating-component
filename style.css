@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root {
+    --orange: hsl(25, 97%, 53%);
+    --white: hsl(0, 0%, 100%);
+    --lightGrey: hsl(217, 12%, 63%);
+    --mediumGrey: hsl(216, 12%, 54%);
+    --darkBlue: hsl(213, 19%, 18%);
+    --veryDarkBlue: hsl(216, 12%, 8%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 15px;
+    font-family: 'Overpass', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--veryDarkBlue);
+}
+
+.container {
+    /* display: none; */
+}
+ 
+.thanks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10%;
+    display: none;
+}
+
+.thanks > p {
+    color: var(--lightGrey);
+    font-weight: 100;
+}
+
+.selection {
+    margin: 10% 0 5% 0;
+    color: orange;
+    border-radius: 15px;
+    background-color: var(--mediumGrey);
+    padding: 5px 15px 5px 15px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5%;
+    padding: 5%;
+    background-color: var(--darkBlue);
+    border-radius: 15px;
+}
+
+.star {
+    border: 10px solid var(--mediumGrey);
+    border-radius: 50%;
+    background-color: var(--mediumGrey);
+
+}
+
+h1 {
+    color: var(--white);
+    font-size: x-large;
+    font-weight: 400;
+    margin: 5% 0 5% 0;
+}
+
+.text {
+    color: var(--lightGrey);
+}
+
+.numbers {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.numbers > button {
+    border: none;
+    background-color: var(--lightGrey);
+    color: var(--white);
+    width: 40px;
+    height: 40px; 
+    border-radius: 100px;
+}
+
+.numbers > button:hover {
+    background-color: var(--orange);
+}
+
+.submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.submit {
+    text-align: center;
+    margin: 0 auto;
+    width: 95%;
+    border: none;
+    border-radius: 25px;
+    height: 40px;
+    background-color: var(--orange);
+    text-transform: uppercase;
+    color: var(--white);
+    font-weight: 400;
+    letter-spacing: 3px;
+}
+
+.submit:hover {
+    background-color: var(--white);
+    color: var(--orange);
+}
+
+footer {
+    color: white;
+}
+
+.numbers > .active {
+    background-color: var(--veryDarkBlue)
+}
+
+@media screen and (min-width: 375px) {
+    main {
+        max-width: 350px;
+    }
+
+    .numbers {
+        gap: 20px;
+    }
+}
